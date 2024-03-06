@@ -1,0 +1,38 @@
+{
+  "namespace": "io.vasiletoncu.example",
+  "type": "record",
+  "name": "Node",
+  "fields": [
+    {
+      "name": "id",
+      "type": "io.vasiletoncu.example.commons.Id"
+    },
+    {
+      "name": "description",
+      "type": "string"
+    },
+    {
+      "name": "properties",
+      "type": {
+        "type": "map",
+        "values": "io.vasiletoncu.example.Property"
+      }
+    },
+    {
+      "name": "left",
+      "type": "io.vasiletoncu.example.Node"
+    },
+    {
+      "name": "right",
+      "type": "io.vasiletoncu.example.Node"
+    },
+    {
+      "name": "childNodes",
+      "type": {
+        "type": "array",
+        "items": "io.vasiletoncu.example.Node"
+      }
+    }
+  ]
+}
+

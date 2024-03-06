@@ -1,0 +1,15 @@
+{
+  "namespace": "io.vasiletoncu.example",
+  "type": "record",
+  "name": "Property",
+  "fields": [
+    {
+      "name": "id",
+      "type": "io.vasiletoncu.example.commons.Id"
+    },
+    {
+      "name": "description",
+      "type": "string"
+    }
+  ]
+}
